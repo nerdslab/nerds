@@ -123,9 +123,10 @@ x_hat_fin(x_hat_fin <= opts.thresh*(max(x_hat_fin)-min(x_hat_fin))) = 0;
 x_hat_mat(:, end) = x_hat_fin;
 
 % select used coefficient (without padding)
-gen_atom_out = gen_atom_mat(1:N_orig,:);
-x_hat_out = x_hat_mat(1:N_orig,:);
-e_hat_out = e_hat_mat(1:N_orig,:);
+N_new = min(N_orig,size(gen_atom_mat,1));
+gen_atom_out = gen_atom_mat(1:N_new,:);
+x_hat_out = x_hat_mat(1:N_new,:);
+e_hat_out = e_hat_mat(1:N_new,:);
 
 if (opts.verbose)
    fprintf('NERDS: Finished.\n');
