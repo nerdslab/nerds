@@ -58,8 +58,7 @@ and output has 4 arguments
 Example Code
 ------------
 
-See `example_synth.m` file for an example from the paper where we show that solving Non-Negative Basis Pursuit hold a promising result of estimating . And `example_nerds.m` that we apply NERDS algorithm 
-to real data.
+See the `example_synth.m` file for an example from the paper on synthetic data. See the `example_nerds.m` file for an example where we apply NERDS algorithm to real calcium data.
 
 For synthetic example, you can follow the code which will produce result graphs as follow. Note that post-processing, we use some thresholding after compute spikes train and summing close peak together:
 
@@ -72,9 +71,8 @@ For synthetic example, you can follow the code which will produce result graphs 
 
 Team members
 ----------
-* [Eva Dyer](http://www.ece.rice.edu/~eld1/)
+* [Eva Dyer](http://dyerlab.gatech.edu/)
 * [Christoph Studer](http://www.csl.cornell.edu/~studer/)
-* [Titipat Achakulvisut](http://klab.smpp.northwestern.edu/wiki/index.php5/Titipat_Achakulvisut)
 
 Acknowledgement
 ----------
@@ -83,4 +81,4 @@ Acknowledgement
 License
 -----------
 * The MIT License (MIT)
-Copyright (c) 2014 Eva Dyer, Christoph Studer and Titipat Achakulvisut
+Copyright (c) 2014 Eva Dyer and Christoph Studer
