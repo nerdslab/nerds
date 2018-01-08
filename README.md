@@ -11,7 +11,7 @@ Related Publication
 
 Description
 ---------
-Matlab package implementing blind deconvolution method for neural spike recovery from calcium signal
+Matlab package implementing blind deconvolution method for neural spike recovery from either calcium traces or intracellular recordings of post-synaptic potentials.
 
 Requirements
 ---------
