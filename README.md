@@ -7,7 +7,7 @@ NERDS
 
 Related Publication
 ---------
-* [Dyer, E.L.; Studer, C.; Robinson, J.T.; Baraniuk, R.G., "A robust and efficient method to recover neural events from noisy and corrupted data," Neural Engineering (NER), 6th International IEEE/EMBS Conference, pp.593-596, 2013] (http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6696004)
+* Dyer, E.L.; Studer, C.; Robinson, J.T.; Baraniuk, R.G., "A robust and efficient method to recover neural events from noisy and corrupted data," Neural Engineering (NER), 6th International IEEE/EMBS Conference, pp.593-596, 2013 [[Paper]](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6696004)
 
 Description
 ---------
@@ -36,9 +36,9 @@ You can run NERDS algorithm by using the function `compute_nerds` in main folder
 [gen_atom_out, spike_idx, x_hat_out, e_hat_out] = compute_nerds(y, opts)
 ```
 
-where input has 2 arguments
-* `y` is 1-D fluorescent/ calcium signal (either row or column format)
-* `opts` is matlab structure contains parameters described in MATLAB code (if not specify, it will assign default parameters)
+where the input has two arguments
+* `y` is 1-D calcium signal (either row or column format)
+* `opts` is a matlab structure containing parameters described in MATLAB code (if it isn't specified, we will assign default parameters)
   * `opts.numTrials` - number of iteration, default `numTrials = 10`
   * `opts.L` - length of template that we want to estimate, default `ask user`
   * `opts.thresh` - thresholding parameter, default `thresh = 0.1` i.e. we thershold spikes whose amplitude less than 10 % from  range of recovered spikes 
@@ -53,7 +53,7 @@ and output has 4 arguments
 
 `opts.L` is estimated length of template (called `gen_atom`) where you can estimate the length by the following figure:
 
-<img align="center" src="https://github.com/KordingLab/nerds/blob/master/nerds_figures/nerd_example.png" width="500px"/>
+<img align="center" src="https://github.com/nerdslab/nerds/blob/master/nerds_figures/nerd_example.png" width="500px"/>
 
 Example Code
 ------------
@@ -62,12 +62,14 @@ See the `example_synth.m` file for an example from the paper on synthetic data. 
 
 For synthetic example, you can follow the code which will produce result graphs as follow. Note that post-processing, we use some thresholding after compute spikes train and summing close peak together:
 
-#### Plot of baseline drift, reconstruct spikes and synthetic data
-<img align="center" src="https://github.com/KordingLab/nerds/blob/master/nerds_figures/nerd_synth_result1.png" width="500px"/>
-#### Plot estimated spikes and synthetic data
-<img align="center" src="https://github.com/KordingLab/nerds/blob/master/nerds_figures/nerd_synth_result2.png" width="500px"/>
-#### Plot result of NERDS applying on real data
-<img align="center" src="https://github.com/KordingLab/nerds/blob/master/nerds_figures/nerds_realdata.png" width="500px"/>
+### Baseline drift and reconstructed spikes for synthetic data
+<img align="center" src="https://github.com/nerdslab/nerds/blob/master/nerds_figures/nerd_synth_result1.png" width="500px"/>
+
+### Estimated spikes for synthetic data
+<img align="center" src="https://github.com/nerdslab/nerds/blob/master/nerds_figures/nerd_synth_result2.png" width="500px"/>
+
+### Result of NERDS applied to real data
+<img align="center" src="https://github.com/nerdslab/nerds/blob/master/nerds_figures/nerds_realdata.png" width="500px"/>
 
 Team members
 ----------
