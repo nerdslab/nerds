@@ -21,12 +21,11 @@ Requirements
 Installation
 ---------
 
-In order to download NERDS folder, either download `zip file` from git repository directly or use `git` to clone 
-repository to particular directory that we want
-
+In order to download NERDS folder, either download `zip file` from the git repository directly or use `git` to clone the
+repository using the command:
 `git clone https://github.com/nerdslab/nerds`
 
-Also install `SPGL1`, run `spgsetup.m`, and then add to MATLAB path. After that, hover to the folder and run `setup_nerds.m` code in order to include path.
+You also need to install `SPGL1`, run `spgsetup.m`, and then add to MATLAB path. After that, hover to the folder and run `setup_nerds.m` code.
 
 Usage
 ---------
