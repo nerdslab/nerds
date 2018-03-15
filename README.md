@@ -36,16 +36,16 @@ You can run NERDS algorithm by using the function `compute_nerds` in main folder
 [gen_atom_out, spike_idx, x_hat_out, e_hat_out] = compute_nerds(y, opts)
 ```
 
-where the input has two arguments
+The input has two arguments:
 * `y` is 1-D calcium signal (either row or column format)
 * `opts` is a matlab structure containing parameters described in MATLAB code (if it isn't specified, we will assign default parameters)
   * `opts.numTrials` - number of iteration, default `numTrials = 10`
   * `opts.L` - length of template that we want to estimate, default `ask user`
-  * `opts.thresh` - thresholding parameter, default `thresh = 0.1` i.e. we thershold spikes whose amplitude less than 10 % from  range of recovered spikes 
+  * `opts.thresh` - thresholding parameter, default `thresh = 0.1` i.e. we threshold spikes whose amplitude less than 10 % of the maximum coefficient amplitude
   * `opts.wsize` - window size where we apply summation of spikes (`peak_sum`) in order to remove small group of low magnitude splikes output from algorithm
   * `opts.verbose` - verbose parameter for SPGL1, default `verbose = false`
 
-and output has 4 arguments
+The output has four arguments:
 * `gen_atom_out` is estimated template where each column contains estimated template of each iteration
 * `spike_idx` is cell that contain index that spikes occur
 * `x_hat_out` is matrix where each column contains estimated spikes train produced in each iteration (we'll fix amplitude problem soon)
