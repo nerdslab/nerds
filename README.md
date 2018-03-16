@@ -60,7 +60,7 @@ Example Code
 See the `example_synth.m` file for an example from the paper on synthetic data. 
 See the `example_nerds.m` file for an example where we apply NERDS algorithm to real calcium data.
 
-For synthetic example, you can follow the code which will produce result graphs as follow. Note that after computing the sparse coefficients, we post-process the coefficients by thresholding the spike train and combining peaks that are close together:
+For synthetic example, the code will produce the graphs below. Note that after computing the sparse coefficients, we post-process the coefficients by thresholding the spike train and combining peaks that are close together.
 
 ### Baseline drift and reconstructed spikes for synthetic data
 <img align="center" src="https://github.com/nerdslab/nerds/blob/master/nerds_figures/nerd_synth_result1.png" width="500px"/>
